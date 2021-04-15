@@ -1,25 +1,51 @@
 import logo from './logo.svg';
-import './App.css';
+import './login.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class MyForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      username: '',
+      age: null,
+    };
+  }
+  myChangeHandler = (event) => {
+    let nam = event.target.name;
+    let val = event.target.value;
+    this.setState({[nam]: val});
+  }
+  render() {
+    return (
+     <div class = 'container'>
+
+        <div class='wholePage'>
+
+          <form id='inputForm' method='GET'>
+
+            <div class='inputForm'>
+            <h1 id='welcome'>Welcome</h1>
+            <p>Username:</p>
+            <input type='text' name='username' onChange={this.myChangeHandler} />
+            <p>Password:</p>
+            <input type='Password' name='password' onChange={this.myChangeHandler} />
+            </div>
+      
+              <div class='buttonContainer'>
+                <button id='submitButton' type="submit" form="inputForm" value="Submit">Submit</button>
+                <button id='createButton' type="submit" form="inputForm" value="Submit">Create Account</button>
+              </div>
+     
+            </form>
+          </div>
+      </div>
+    
+      
+    );
+  }
 }
 
-export default App;
+ReactDOM.render(<MyForm />, document.getElementById('root'));
+export default MyForm;
