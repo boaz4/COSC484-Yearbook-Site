@@ -3,14 +3,14 @@ import "./index.css"
 
 
 
-const Sidebar = ({item, names}) =>{
-    const [state, setState] = useState({
-    
-  });
+const Sidebar = (props) =>{
     return(
        <>
        <div className = "side">
-            <h4>{item}</h4>
+            <h4>title</h4>
+            <button className ="side-button"> Towson main</button>
+            <button className ="side-button"> Towson main</button>
+            <button className ="side-button"> Towson main</button>
             <button className ="side-button"> Towson main</button>
 
        </div>

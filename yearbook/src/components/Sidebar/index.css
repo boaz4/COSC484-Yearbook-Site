@@ -1,9 +1,12 @@
 .side{
-    width: 25%;
+    width: 275px;
     height:50vh; 
-    border: solid 1px grey;
+    border: solid 1px lightgrey;
+    position: relative;
     text-align: center;
 }
 .side-button{
     width:90%;
+    height:10%;
+    margin-top: 10%;
 }
