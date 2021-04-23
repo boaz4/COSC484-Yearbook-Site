@@ -1,0 +1,9 @@
+.side{
+    width: 25%;
+    height:50vh; 
+    border: solid 1px grey;
+    text-align: center;
+}
+.side-button{
+    width:90%;
+}

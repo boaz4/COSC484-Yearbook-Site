@@ -1,12 +1,15 @@
 import './App.css';
 import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
+
+
 
 function App() {
   return (
     <>
       <Navbar/>
-      <Navbar/>
-      <Navbar/>
+      <Sidebar item = "Chatroom"/>
+       <Sidebar item = "Direct messages"  />
     </>
   );
 }
