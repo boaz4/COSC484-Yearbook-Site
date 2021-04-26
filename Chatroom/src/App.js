@@ -1,14 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
 
-const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://admin:admin@cluster0.sslph.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
-});
+
+const Express = require("express");
+var mongoose = require('mongoose');
+var mongoDB = 'mongodb://cluster0.sslph.mongodb.net/my_database';
+mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+
+
+// const BodyParser = require("body-parser");
+// const MongoClient = require("mongodb").MongoClient;
+// const ObjectId = require("mongodb").ObjectID;
+var app = Express();
+app.use(BodyParser.json());
+app.use(BodyParser.urlencoded({ extended: true }));
+app.listen(5000, () => {});
+
+
+
+
 
 function App() {
   return (
