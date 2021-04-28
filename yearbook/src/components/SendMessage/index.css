@@ -1,3 +1,12 @@
-form{
-margin-top: 3%;
+
+input{
+    width:60%;
+   height: 50px;
+    border-radius: 25px;
+    border: 2px solid grey;
+    padding: 20px; 
+    height: 15px;  
+    margin-right: 10px;
+    display: inline-flex;
+    
 }

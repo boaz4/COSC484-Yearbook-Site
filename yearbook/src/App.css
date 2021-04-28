@@ -4,5 +4,26 @@
 }
 
 .col{
+
     width:1000px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ECEFEE;
+     border-left: solid .5px lightgrey;
+ 
 }
+
+.chats{
+    height: 750px;
+    overflow: auto;
+    padding-left: 10px;
+    margin-top: 50px;
+   
+}
+
+.message{
+    height: fit-content;
+
+}
+
+

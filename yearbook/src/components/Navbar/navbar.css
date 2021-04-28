@@ -10,3 +10,6 @@
   font-family: 'Cormorant Garamond', serif;
   
 }
+nav{
+  border-bottom: solid 1px lightgrey;
+}

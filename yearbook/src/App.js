@@ -10,18 +10,34 @@ function App() {
     <>
       <Navbar/>
       <div className = "row">
+
        <div>
         <Sidebar item = "Chatroom"/>
+        <hr/>
          <Sidebar item = "Direct messages"  />
        </div>
+      
+      
        <div className = "col">
+
+         <div className = "chats">
          <Chat/>
         <Chat/>
         <Chat/>
         <Chat/>
         <Chat/>
-        
+         <Chat/>
+        <Chat/>
+        <Chat/>
+        <Chat/>
+        <Chat/>
+        </div>
+
+        <div className = "message">
         <Message/>
+        </div>
+
+
        </div>
         </div>
 
