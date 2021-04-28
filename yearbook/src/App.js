@@ -8,6 +8,9 @@ import Message from "./components/SendMessage"
 function App() {
   return (
     <>
+    <div className="view">
+
+  
       <Navbar/>
       <div className = "row">
 
@@ -42,7 +45,7 @@ function App() {
         </div>
 
 
-      
+        </div>
     
     </>
   );

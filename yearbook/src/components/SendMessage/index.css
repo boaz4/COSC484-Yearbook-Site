@@ -1,6 +1,6 @@
 
 input{
-    width:60%;
+    width:40%;
    height: 50px;
     border-radius: 25px;
     border: 2px solid grey;
@@ -9,4 +9,22 @@ input{
     margin-right: 10px;
     display: inline-flex;
     
+}
+form{
+     display: flex;
+}
+.send{
+    flex: .90;
+}
+.send-btn{
+   
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 75px;
+    height: 45px;
+     border-radius: 25px;
+  
+     border: 2px solid grey;
+    background-color: #77bca6;
+
 }
