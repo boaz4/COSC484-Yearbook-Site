@@ -4,6 +4,7 @@
     border-right: solid .5px lightgrey;
     position: relative;
     text-align: center;
+    overflow: auto;
 }
 .side-button{
     width:90%;

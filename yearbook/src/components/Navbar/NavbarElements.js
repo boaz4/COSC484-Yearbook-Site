@@ -45,7 +45,6 @@ export const NavMenu = styled.div`
   align-items: center;
   margin-right: -150px;
   /* Second Nav */
-
   /* Third Nav */
   /* width: 100vw;
   white-space: nowrap; */

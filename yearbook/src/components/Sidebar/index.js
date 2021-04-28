@@ -12,13 +12,6 @@ const Sidebar = (props) =>{
             <h4>{props.title}</h4>
 
             {rooms.map((room) => <button className ="side-button">{room}</button> )}
-            
-
-            
-            {/* <button className ="side-button"> Towson main</button>
-            <button className ="side-button"> Towson main</button>
-            <button className ="side-button"> Towson main</button>
-            <button className ="side-button"> Towson main</button> */}
 
        </div>
        </>
