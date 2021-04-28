@@ -6,6 +6,9 @@ import Message from "./components/SendMessage"
 
 
 function App() {
+
+  var rooms = ["Towson Main", "Towson STEM", "GTJHS Main", "Towson Basketball"]
+  var messenger = ["Tom Smith", "Coach Andrews", "Alexis Matthews", "James Peters", "sam Hunter"]
   return (
     <>
     <div className="view">
@@ -15,9 +18,9 @@ function App() {
       <div className = "row">
 
        <div>
-        <Sidebar item = "Chatroom"/>
+        <Sidebar items = {rooms} title = "Chatroom"/>
         <hr/>
-         <Sidebar item = "Direct messages"  />
+         <Sidebar   items = {messenger} title = "Direct messages"  />
        </div>
       
       

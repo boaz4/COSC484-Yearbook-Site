@@ -4,14 +4,21 @@ import "./index.css"
 
 
 const Sidebar = (props) =>{
+    const rooms = props.items;
+    console.log(rooms);
     return(
        <>
        <div className = "side">
-            <h4>title</h4>
+            <h4>{props.title}</h4>
+
+            {rooms.map((room) => <button className ="side-button">{room}</button> )}
+            
+
+            
+            {/* <button className ="side-button"> Towson main</button>
             <button className ="side-button"> Towson main</button>
             <button className ="side-button"> Towson main</button>
-            <button className ="side-button"> Towson main</button>
-            <button className ="side-button"> Towson main</button>
+            <button className ="side-button"> Towson main</button> */}
 
        </div>
        </>
