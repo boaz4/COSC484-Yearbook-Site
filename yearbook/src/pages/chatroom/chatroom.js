@@ -1,8 +1,8 @@
 import "./chatroom.css";
-import Navbar  from "../components/Navbar";
-import Sidebar from '../components/Sidebar';
-import Chat from "../components/chats";
-import Message from "../components/SendMessage"
+import Navbar  from "../../components/Navbar";
+import Sidebar from '../../components/Sidebar';
+import Chat from "../../components/chats";
+import Message from "../../components/SendMessage"
 
 
 function Chatroom(){
