@@ -1,14 +1,12 @@
 import './App.css';
+import Login from './pages/login'
 
-import LoginForm from './pages/login/login';
-import './homepage/login.css';
-import Chatroom from './pages/chatroom/chatroom'
 
 function App() {
   return (
     <div>
-      <LoginForm />
-      <Chatroom />
+     
+       <Login/>
     </div>
   );
 }
