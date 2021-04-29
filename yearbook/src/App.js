@@ -1,9 +1,6 @@
 import './App.css';
-import LoginForm from './homepage/login.js';
-import './homepage/login.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CreatePage from './homepage/createPage';
 import './App.css';
 import Login from './pages/login/index.js'
 import CreateAccount from './pages/createAccount/index.js'
