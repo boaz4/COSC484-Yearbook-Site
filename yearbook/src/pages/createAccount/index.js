@@ -5,12 +5,16 @@ import SignPassoword from "../../components/password"
 import {Link} from 'react-router-dom'
 import {useState} from 'react'
 
+function testFunc(){
+    console.log('hi');
+}
 
 const CreateAccount = ()=>{
 
     const handleSubmit = (e) => {
-        e.preventDefult();
         console.log('hi');
+        e.preventDefault();
+        
         
        
         /* const form = e.target;
@@ -25,7 +29,7 @@ const CreateAccount = ()=>{
 
                 <div className='wholePage'>
 
-                    <form id='inputForm' method='GET' action="createPage.js" onSubmit={handleSubmit} >
+                    <form id='inputForm' method='GET' action="createPage.js" onSubmit={testFunc} >
 
                         <div className ='inputForm'>
                         <h1 id='welcome'>Hello, Please Sign Up!</h1>
