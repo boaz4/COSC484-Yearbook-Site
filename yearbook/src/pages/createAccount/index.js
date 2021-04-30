@@ -2,32 +2,46 @@ import React from 'react'
 import "./index.css"
 import SignInput from "../../components/inputs"
 import SignPassoword from "../../components/password"
+import {Link} from 'react-router-dom'
+import {useState} from 'react'
+
 
 const CreateAccount = ()=>{
+
+    const handleSubmit = (e) => {
+        e.preventDefult();
+        console.log('hi');
+        
+       
+        /* const form = e.target;
+        const data = new FormData(form);
+        console.log(data.get('password'));
+        console.log(form.elements); */
+    }
+
     return(
         <>
-   <div class = 'container'>
+            <div className = 'container'>
 
-            <div class='wholePage'>
+                <div className='wholePage'>
 
-              <form id='inputForm' method='GET' action="createPage.js" >
+                    <form id='inputForm' method='GET' action="createPage.js" onSubmit={handleSubmit} >
 
-                <div class='inputForm'>
-                  <h1 id='welcome'>Hello, Please Sign Up!</h1>
-                  <SignInput  text = "Create Username:"/>
+                        <div className ='inputForm'>
+                        <h1 id='welcome'>Hello, Please Sign Up!</h1>
+                        <SignInput  text = "Create Username:"/>
+                        <SignPassoword  text = "Create Password: "/>
+                        <SignPassoword  text = "Verify Password: "/>
+                        </div>
+                
+                        <div className='buttonContainer'>
+                        <Link to='/'id='submitButton' type="submit" form="inputForm" value="Submit" >Submit</Link> 
+                        </div>
 
-                  <SignPassoword  text = "Create Password: "/>
-                  <SignPassoword  text = "Verify Password: "/>
+                    </form>
+
                 </div>
-        
-                <div class='buttonContainer'>
-                  <button id='submitButton' type="submit" form="inputForm" value="Submit">Submit</button>
-                </div>
-
-              </form>
-
-          </div>
-      </div>
+            </div>
       </>
     )
 }

@@ -5,7 +5,7 @@ const SignInput = (props)=>{
 return (
     <>
 <p>{props.text}</p>
-<input type='text' name='username'/>
+<input type='text' name='username' />
 </>
 )}
 

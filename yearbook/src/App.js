@@ -4,14 +4,27 @@ import ReactDOM from 'react-dom';
 import './App.css';
 import Login from './pages/login/index.js'
 import CreateAccount from './pages/createAccount/index.js'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 
 function App() {
   return (
-    <div>
-       <Login/>
-       {/* <CreateAccount/> */}
+    <Router>
+      <div className = 'Login'>
+       {/* <Login/> */}
+       <div className = 'createAccount'>
+        <Switch>
+          <Route exact path='/'>
+              <Login/>
+          </Route>
+          <Route exact path='/CreateAccount'>
+              <CreateAccount/>
+          </Route>
+        </Switch>
+       </div>
     </div>
+    </Router>
+    
   );
 }
 
