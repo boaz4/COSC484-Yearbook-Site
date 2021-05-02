@@ -1,9 +1,19 @@
 import './App.css';
+<<<<<<< HEAD
 import Login from './pages/login'
+=======
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './App.css';
+import Login from './pages/login/index.js'
+import CreateAccount from './pages/createAccount/index.js'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+>>>>>>> origin/login
 
 
 function App() {
   return (
+<<<<<<< HEAD
     <div>
      
        <Login/>
@@ -12,3 +22,80 @@ function App() {
 }
 
 export default App;
+=======
+    <Router>
+      <div className = 'Login'>
+       {/* <Login/> */}
+       <div className = 'createAccount'>
+        <Switch>
+          <Route exact path='/'>
+              <Login/>
+          </Route>
+          <Route exact path='/CreateAccount'>
+              <CreateAccount/>
+          </Route>
+        </Switch>
+       </div>
+    </div>
+    </Router>
+    
+  );
+}
+
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+class MyForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      username: '',
+      age: null,
+    };
+  }
+  
+  render() {
+      return (
+        <div class = 'container'>
+
+            <div class='wholePage'>
+
+              <form id='inputForm' method='GET' action="createPage.js" >
+
+                <div class='inputForm'>
+                  <h1 id='welcome'>Welcome</h1>
+                  <p>Username:</p>
+                  <input type='text' name='username' onChange={this.myChangeHandler} />
+                  <p>Password:</p>
+                  <input type='Password' name='password' onChange={this.myChangeHandler} />
+                </div>
+        
+                <div class='buttonContainer'>
+                  <button id='submitButton' type="submit" form="inputForm" value="Submit">Submit</button>
+                  <button id='createButton' type="submit" form="inputForm" value="Submit">Create Account</button>
+                </div>
+     
+              </form>
+          </div>
+      </div>
+    );
+  }
+}
+
+
+ReactDOM.render(<MyForm />, document.getElementById('root'));
+export default MyForm;
+*/
+>>>>>>> origin/login
