@@ -1,26 +1,31 @@
 import React from 'react'
 import "./index.css"
 import SignInput from "../../components/inputs"
-import SignPassoword from "../../components/password"
+import SignPassword from "../../components/password"
 import {Link} from 'react-router-dom'
 import {useState} from 'react'
+import {useHistory} from 'react-router-dom'
 
-function testFunc(){
-    console.log('hi');
-}
 
-const CreateAccount = ()=>{
+ const CreateAccount = (props) => {
+    const history = useHistory();
 
     const handleSubmit = (e) => {
         console.log('hi');
         e.preventDefault();
-        
-        
-       
-        /* const form = e.target;
-        const data = new FormData(form);
-        console.log(data.get('password'));
-        console.log(form.elements); */
+        var password = document.getElementById('password').value;
+        var vPassword = document.getElementById('vPassword').value;
+        if(password != vPassword){
+            alert('Passwords Dont match please try again');
+            console.log('fasle');
+            return false;         
+        }
+        else{
+            history.push('/');
+            console.log('true');
+        }
+
+  
     }
 
     return(
@@ -29,17 +34,22 @@ const CreateAccount = ()=>{
 
                 <div className='wholePage'>
 
-                    <form id='inputForm' method='GET' action="createPage.js" onSubmit={testFunc} >
+                    <form id='inputForm' method='GET' action="createPage.js" >
 
                         <div className ='inputForm'>
                         <h1 id='welcome'>Hello, Please Sign Up!</h1>
                         <SignInput  text = "Create Username:"/>
-                        <SignPassoword  text = "Create Password: "/>
-                        <SignPassoword  text = "Verify Password: "/>
+                        <p>Create Password</p>
+                        <input id='password' type='password' name='password'/>
+                        <p>Verify Password</p>
+                        <input id='vPassword' type='password' name='vPassword' />
+                       {/*  <SignPassword  text = "Create Password: "/>
+                        <SignPassword  text = "Verify Password: "/> */}
                         </div>
                 
                         <div className='buttonContainer'>
-                        <Link to='/'id='submitButton' type="submit" form="inputForm" value="Submit" >Submit</Link> 
+                        {/* <Link to='/'id='submitButton' type="submit" form="inputForm" value="Submit" >Submit</Link>  */}
+                        <button id='submitButton' type="submit" form="inputForm" value="Submit" onClick={handleSubmit}>Submit</button>
                         </div>
 
                     </form>

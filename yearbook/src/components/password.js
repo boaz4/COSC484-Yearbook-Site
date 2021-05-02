@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const SignPassoword = (props)=>{
+const SignPassword = (props)=>{
 return (
     <>
 <p>{props.text}</p>
@@ -9,4 +9,4 @@ return (
 </>
 )}
 
-export default SignPassoword;
+export default SignPassword;
