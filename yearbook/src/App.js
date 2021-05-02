@@ -1,28 +1,14 @@
 import './App.css';
-<<<<<<< HEAD
-import Login from './pages/login'
-=======
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
 import Login from './pages/login/index.js'
 import CreateAccount from './pages/createAccount/index.js'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
->>>>>>> origin/login
 
 
 function App() {
   return (
-<<<<<<< HEAD
-    <div>
-     
-       <Login/>
-    </div>
-  );
-}
-
-export default App;
-=======
     <Router>
       <div className = 'Login'>
        {/* <Login/> */}
@@ -98,4 +84,3 @@ class MyForm extends React.Component {
 ReactDOM.render(<MyForm />, document.getElementById('root'));
 export default MyForm;
 */
->>>>>>> origin/login
