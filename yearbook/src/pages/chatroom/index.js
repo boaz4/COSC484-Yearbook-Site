@@ -1,4 +1,4 @@
-import "./chatroom.css";
+import "./index.css";
 import Navbar  from "../../components/Navbar";
 import Sidebar from '../../components/Sidebar';
 import Chat from "../../components/chats";

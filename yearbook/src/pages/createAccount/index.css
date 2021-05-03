@@ -1,50 +1,36 @@
 
 .container{
-    background-color: #272c2b;
-  }
-  
-  form{
-    display: inline-block;
-    width: 30%;
-    padding: 12px 20px;
-    align-items: center;
-    border: 1px solid rgb(63, 57, 57);
-    border-radius: 4px;
-    position:relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    border-radius: 12px;
-    background-color: white;
-  }
-  #welcome{
-    align-items: center;
-  }
-  input{
-    border-radius: 30px;
-    width: 80%;
-    padding: 12px 20px;
-    align-items: center;
-    border: 1px solid #707070;
-    border-radius: 20px;
-  }
-  
-  #createButton{
-      background-color: #77BCA6; 
-      color: black;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      border-radius: 20px;
-      font-size: 16px;
-      font-family: 'Cormorant Garamond', serif;
-      font-weight: 500;
-      border: 1px solid rgb(63, 57, 57);
-  }
-  #submitButton{
+  background-color: #272c2b;
+}
+
+form{
+  display: inline-block;
+  width: 30%;
+  padding: 12px 20px;
+  align-items: center;
+  border: 1px solid rgb(63, 57, 57);
+  border-radius: 4px;
+  position:relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  border-radius: 12px;
+  background-color: white;
+}
+#welcome{
+  align-items: center;
+}
+input{
+  border-radius: 30px;
+  width: 80%;
+  padding: 12px 20px;
+  align-items: center;
+  border: 1px solid #707070;
+  border-radius: 20px;
+}
+
+#createButton{
     background-color: #77BCA6; 
-    border:1px solid rgb(63, 57, 57);
     color: black;
     padding: 15px 32px;
     text-align: center;
@@ -54,10 +40,23 @@
     font-size: 16px;
     font-family: 'Cormorant Garamond', serif;
     font-weight: 500;
-  }
-  .buttonContainer{
-    text-align: center;
-    width: max-content;
-    padding-top: 20px;
-  }
-  
+    border: 1px solid rgb(63, 57, 57);
+}
+#submitButton{
+  background-color: #77BCA6; 
+  border:1px solid rgb(63, 57, 57);
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 20px;
+  font-size: 16px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+}
+.buttonContainer{
+  text-align: center;
+  width: max-content;
+  padding-top: 20px;
+}

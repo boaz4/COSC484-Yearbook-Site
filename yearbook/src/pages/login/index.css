@@ -1,6 +1,4 @@
 
-  
-
 .container{
   background-color: #272c2b;
 }
@@ -62,20 +60,3 @@ input{
   width: max-content;
   padding-top: 20px;
 }
-
-/*
-.inputForm{
-  align-items: center;
-}
-*/
-
-/*
-input[type=password], select {
-    border-radius: 25px;
-    width: 30%;
-    padding: 12px 20px;
-    align-items: center;
-    display: inline-block;
-    border: 1px solid rgb(63, 57, 57);
-    border-radius: 4px;
-  }*/
