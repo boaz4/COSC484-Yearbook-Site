@@ -23,6 +23,11 @@ const Navbar= () => {
     e.preventDefault();
     history.push('/Profile');
 }
+ const toHome = (e) => {
+    console.log('to home');
+    e.preventDefault();
+    history.push('/');
+}
 
 //   const loginSubmitForm = (e) => {
 //     console.log('login');
@@ -38,9 +43,6 @@ const Navbar= () => {
              <p className = "logo">Yearbook</p>
             <Bars />
             <NavMenu>
-                <NavLink to = "/home" activeStyle>
-                   <p className = "nav-items"> Home </p>
-                </NavLink>
                 <NavLink to = "/profile" activeStyle onClick={toProfile} >
                     <p className = "nav-items"> Profile</p>
                     
@@ -49,8 +51,8 @@ const Navbar= () => {
                    <p className = "nav-items"> Settings </p>
 
                 </NavLink>
-                <NavLink to = "/help" activeStyle>
-                  <p className = "nav-items"> Help </p>
+                <NavLink to = "/" activeStyle onClick={toHome}>
+                  <p className = "nav-items"> sign out </p>
 
                 </NavLink>
             </NavMenu>

@@ -2,7 +2,8 @@ import React  from 'react'
 import './index.css';
 import Navbar  from "../../components/Navbar";
 import ProfileHead from "../../components/ProfileHeader"
-import Bio from "../../components/bio/bio"
+import Bio from "../../components/bio"
+
 
 function Profile () {
   return (
@@ -16,10 +17,11 @@ function Profile () {
       <body>
       <ProfileHead />
 
-    <Bio/>
+      <Bio/>
 
-    <div class = "bio"> 
-    {/* midpage */}
+    
+
+    {/* <div class = "midpage"> 
         <h3>ABOUT</h3>
         <p>TAGLINE: <br></br> Live hard or die trying
         </p>
@@ -29,7 +31,7 @@ function Profile () {
         </p>
         <p>MAJOR/SCHOOL OF GRADUATION: <br></br> Business Administration - School of Business
         </p>
-    </div>
+    </div> */}
       </body>
 
 
