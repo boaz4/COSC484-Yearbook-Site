@@ -1,5 +1,13 @@
 .App {
   text-align: center;
+  background-color: #272c2b;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 .App-logo {
@@ -13,16 +21,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
@@ -36,3 +34,136 @@
     transform: rotate(360deg);
   }
 }
+
+
+.active {
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  padding: auto;
+  width: max-content;
+  overflow: hidden;
+  background-color: #77BCA6;
+  display: flex;
+ 
+}
+
+.active li {
+  float: right;
+  margin: 5 px;
+  padding: 5 px; 
+  
+}
+
+.active li a {
+  color: black;
+  padding: 40px;
+  text-decoration: none;
+  font-size: 1.5em;
+  text-align: right;
+  font-family: 'Times New Roman', Times, serif;
+  }
+
+.top{
+  text-align: center;
+  margin: auto;
+  float: right;
+  color: black;
+  padding: auto;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.profile img {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  max-height: 200px;
+  margin: auto;
+  text-align: left;
+  border-radius: 45%;
+}
+
+.profile h1{
+  text-align: center;
+}
+
+.active h1{
+float: left;
+color: black;
+padding: 40px;
+text-decoration: none;
+font-size: 3em;
+text-align: left;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.buttons{
+  display: block;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 100px;
+}
+
+.buttons input{
+  font-size: 1em;
+}
+
+.user{
+  text-align: center;
+  list-style-type: none;
+  margin: 5 px;
+  padding: 5 px;
+  overflow: hidden;
+  display: block;
+  margin: auto 0;
+  text-align: center;
+
+}
+
+.sidebar {
+  float: left;
+  width: 600px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 8px;
+  border-width: auto;
+  background-color: black;
+  
+  }
+  
+  .sidebar p{
+  width: 400px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 8px;
+  border-width: auto;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 25px;
+  text-align: center;
+  }
+  
+  .midpage {
+  float: left;
+  width: 600px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 5px;
+  border-width: auto;
+  margin-left: 500px;
+  background-color: black;
+  }
+  
+  .midpage p{
+  width: 300px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 8px;
+  border-width: auto;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 25px;
+  text-align: center;
+  }
