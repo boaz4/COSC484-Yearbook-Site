@@ -1,5 +1,5 @@
 
-input{
+.Message-input{
     width:40%;
    height: 50px;
     border-radius: 25px;
@@ -10,8 +10,11 @@ input{
     display: inline-flex;
     
 }
+
 form{
      display: flex;
+     width:80%;
+     
 }
 .send{
     flex: .90;

@@ -7,11 +7,29 @@ import {
   Bars,
   NavMenu,
   NavBtn,
-  NavBtnLink,
+//   NavBtnLink,
 } from './NavbarElements';
 
+import {useHistory} from 'react-router-dom'
+
+
+  
 
 const Navbar= () => {
+    const history = useHistory();
+
+   const toProfile = (e) => {
+    console.log('to profile');
+    e.preventDefault();
+    history.push('/Profile');
+}
+
+//   const loginSubmitForm = (e) => {
+//     console.log('login');
+//     e.preventDefault();
+//     history.push('/Chatroom');
+//   }
+
 
     return (
         <>
@@ -23,8 +41,9 @@ const Navbar= () => {
                 <NavLink to = "/home" activeStyle>
                    <p className = "nav-items"> Home </p>
                 </NavLink>
-                <NavLink to = "/profile" activeStyle>
+                <NavLink to = "/profile" activeStyle onClick={toProfile} >
                     <p className = "nav-items"> Profile</p>
+                    
                 </NavLink>
                 <NavLink to = "/settings" activeStyle>
                    <p className = "nav-items"> Settings </p>

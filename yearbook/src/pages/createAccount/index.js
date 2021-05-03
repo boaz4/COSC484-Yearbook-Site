@@ -1,9 +1,9 @@
 import React from 'react'
 import "./index.css"
 import SignInput from "../../components/inputs"
-import SignPassword from "../../components/password"
-import {Link} from 'react-router-dom'
-import {useState} from 'react'
+// import SignPassword from "../../components/password"
+// import {Link} from 'react-router-dom'
+// import {useState} from 'react'
 import {useHistory} from 'react-router-dom'
 
 const CreateAccount = (props)=>{

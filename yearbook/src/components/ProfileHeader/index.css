@@ -1,0 +1,24 @@
+.profilePic{
+    height: 20rem;
+    width: 20rem;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.user{
+    display: flex;
+}
+
+
+.buttons{
+    width: 20%;
+    margin-right: 3%;
+    font-size:x-small;
+
+}
+
+.user-2{
+    width: 80%;
+    margin-top: 12%;
+    margin-left: 5%;
+}

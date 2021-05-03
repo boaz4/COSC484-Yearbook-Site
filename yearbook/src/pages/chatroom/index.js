@@ -38,7 +38,7 @@ return(
         <Chat/>
         </div>
 
-        <div className = "message">
+        <div className = "messageBody">
         <Message/>
         </div>
 
