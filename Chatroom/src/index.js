@@ -19,8 +19,8 @@ import logger from "morgan";
 import cors from "cors";
 import socketio from "socket.io";
 // mongo connection
-import "./config/mongo.js";
-// socket configuration
+import "./mongo.js";
+//socket configuration
 import WebSockets from "./utils/WebSockets.js";
 // routes
 import indexRouter from "./routes/index.js";

@@ -10,9 +10,9 @@ var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 
-// const BodyParser = require("body-parser");
-// const MongoClient = require("mongodb").MongoClient;
-// const ObjectId = require("mongodb").ObjectID;
+ const BodyParser = require("body-parser");
+ const MongoClient = require("mongodb").MongoClient;
+ const ObjectId = require("mongodb").ObjectID;
 var app = Express();
 app.use(BodyParser.json());
 app.use(BodyParser.urlencoded({ extended: true }));
