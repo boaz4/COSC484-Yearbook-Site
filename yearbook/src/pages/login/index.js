@@ -4,8 +4,10 @@ import SignInput from "../../components/inputs"
 import SignPassword from "../../components/password"
 import {Link} from 'react-router-dom'
 import {useHistory} from 'react-router-dom'
+import { useState } from 'react';
 
 const Login = ()=>{
+  const [token, setToken] = useState();
 
   const history = useHistory();
 
@@ -16,6 +18,9 @@ const Login = ()=>{
 }
 
   const loginSubmitForm = (e) => {
+    if(!token) {
+      return <Login setToken={setToken} />
+    }
     console.log('login');
     console.log('newlogin');
     e.preventDefault();
