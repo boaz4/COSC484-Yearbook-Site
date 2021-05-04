@@ -1,5 +1,4 @@
 import mongoose from 'mongoose'
-import config from './index.js'
 
 const CONNECTION_URL = 'mongodb+srv://admin:admin@cluster0.sslph.mongodb.net/cluster0?retryWrites=true&w=majority'
 mongoose.connect(CONNECTION_URL, {
