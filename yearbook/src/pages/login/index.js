@@ -18,9 +18,9 @@ const Login = ()=>{
 }
 
   const loginSubmitForm = (e) => {
-    if(!token) {
+    /* if(!token) {
       return <Login setToken={setToken} />
-    }
+    } */
     console.log('login');
     console.log('newlogin');
     e.preventDefault();
