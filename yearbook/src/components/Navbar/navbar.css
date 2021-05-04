@@ -1,0 +1,15 @@
+.logo{
+   color: #7cbfaf;
+  margin-left:0;
+   font-size:xx-large;
+   font-family: 'Cormorant Garamond', serif;
+}
+
+.nav-items{
+  font-size: x-large;
+  font-family: 'Cormorant Garamond', serif;
+  
+}
+nav{
+  border-bottom: solid 1px lightgrey;
+}

@@ -1,0 +1,51 @@
+import React  from 'react'
+import './index.css';
+import Navbar  from "../../components/Navbar";
+import ProfileHead from "../../components/ProfileHeader"
+import Bio from "../../components/bio"
+import About from "../../components/about"
+
+
+
+function Profile () {
+  return (
+      <>
+    <div className="App">
+     
+        <div id="header">
+        <Navbar/>
+        </div>
+    
+      <body>
+      <ProfileHead />
+
+      <div className = "info">
+      <Bio/>
+
+      <About />
+      </div>
+
+     
+
+    
+
+    {/* <div class = "midpage"> 
+        <h3>ABOUT</h3>
+        <p>TAGLINE: <br></br> Live hard or die trying
+        </p>
+        <p>GRADUATION YEAR: <br></br> 2021
+        </p>
+        <p>SCHOOL: <br></br> Towson University
+        </p>
+        <p>MAJOR/SCHOOL OF GRADUATION: <br></br> Business Administration - School of Business
+        </p>
+    </div> */}
+      </body>
+
+
+    </div>
+    </>
+  );
+}
+
+export default Profile;

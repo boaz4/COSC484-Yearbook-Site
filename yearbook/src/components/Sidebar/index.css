@@ -1,0 +1,13 @@
+.side{
+    width: 275px;
+    height:42vh; 
+    border-right: solid .5px lightgrey;
+    position: relative;
+    text-align: center;
+    overflow: auto;
+}
+.side-button{
+    width:90%;
+    height:10%;
+    margin-top: 10%;
+}
