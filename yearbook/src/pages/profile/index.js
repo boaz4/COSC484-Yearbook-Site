@@ -35,7 +35,7 @@ const history = useHistory();
       </div>
 
       </body>
-      <button className = "homebtn" onClick={loginSubmitForm} >Chat</button>
+      <button className = "homebtn"  onClick={loginSubmitForm} >Chat</button>
 
     </div>
     </>

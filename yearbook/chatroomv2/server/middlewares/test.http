@@ -1,0 +1,13 @@
+POST localhost:3000/users HTTP/1.1
+
+{
+    "success": true,
+    "users": [
+    {
+        "id": "dfgjkhskjfgshdj",
+        "firstName": "bo",
+        "lastName": "boaz",
+        "type": "07-21-2000",
+        "updateAt": "07-22-200",
+    }]
+}

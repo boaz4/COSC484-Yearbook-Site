@@ -17,6 +17,7 @@ const Login = ()=>{
 
   const loginSubmitForm = (e) => {
     console.log('login');
+    console.log('newlogin');
     e.preventDefault();
     history.push('/Chatroom');
   }
