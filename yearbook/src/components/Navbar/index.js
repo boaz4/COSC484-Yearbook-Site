@@ -47,10 +47,10 @@ const Navbar= () => {
                     <p className = "nav-items"> Profile</p>
                     
                 </NavLink>
-                <NavLink to = "/settings" activeStyle>
+                {/* <NavLink to = "/settings" activeStyle>
                    <p className = "nav-items"> Settings </p>
 
-                </NavLink>
+                </NavLink> */}
                 <NavLink to = "/" activeStyle onClick={toHome}>
                   <p className = "nav-items"> sign out </p>
 

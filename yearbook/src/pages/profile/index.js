@@ -4,10 +4,18 @@ import Navbar  from "../../components/Navbar";
 import ProfileHead from "../../components/ProfileHeader"
 import Bio from "../../components/bio"
 import About from "../../components/about"
+import {useHistory} from 'react-router-dom'
 
 
 
 function Profile () {
+const history = useHistory();
+ const loginSubmitForm = (e) => {
+    console.log('login');
+    e.preventDefault();
+    history.push('/Chatroom');
+  }
+
   return (
       <>
     <div className="App">
@@ -23,25 +31,11 @@ function Profile () {
       <Bio/>
 
       <About />
+     
       </div>
 
-     
-
-    
-
-    {/* <div class = "midpage"> 
-        <h3>ABOUT</h3>
-        <p>TAGLINE: <br></br> Live hard or die trying
-        </p>
-        <p>GRADUATION YEAR: <br></br> 2021
-        </p>
-        <p>SCHOOL: <br></br> Towson University
-        </p>
-        <p>MAJOR/SCHOOL OF GRADUATION: <br></br> Business Administration - School of Business
-        </p>
-    </div> */}
       </body>
-
+      <button className = "homebtn" onClick={loginSubmitForm} >Chat</button>
 
     </div>
     </>
